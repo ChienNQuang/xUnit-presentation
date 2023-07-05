@@ -27,7 +27,7 @@ public class DatabaseInitializer
         if (nickChapsas is null)
         {
             await connection.ExecuteAsync("INSERT INTO Users (Id, FullName) VALUES (@Id, @FullName)",
-                new { Id = Guid.NewGuid().ToString(), FullName = "Nick Chapsas" });
+                new { Id = Guid.NewGuid().ToString(), FullName = "Nguyen Quang Chien" });
         }
     }
 }
